@@ -1,7 +1,9 @@
 # assignment3nn
 
-#JASMITHA NALLA
-#700759188
+## Student Information
+- **Name**: Jasmitha Nalla
+- **Course**: CS5720 Neural Networks and Deep Learning
+- **University**: University of Central Missouri
 
 ###Question 1: Basic Autoencoder
 ###Objective:
