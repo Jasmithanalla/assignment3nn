@@ -1,6 +1,8 @@
 # assignment3nn
-##JASMITHA NALLA
-##700759188
+
+#JASMITHA NALLA
+#700759188
+
 ###Question 1: Basic Autoencoder
 ###Objective:
 Implement a fully connected autoencoder on the MNIST dataset and evaluate reconstruction quality with varying latent dimensions. ###S teps:
@@ -58,7 +60,7 @@ Objective:
 Classify IMDB movie reviews as positive or negative using an LSTM-based sentiment classifier.
 
 Steps:
-Load and Preprocess Data
+- Load and Preprocess Data
 Used tensorflow.keras.datasets.imdb.
 Limited vocabulary size (e.g., top 10,000 words).
 Applied pad_sequences to make review lengths uniform.
