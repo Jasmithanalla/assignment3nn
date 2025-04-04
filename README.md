@@ -5,8 +5,8 @@
 - **Course**: CS5720 Neural Networks and Deep Learning
 - **University**: University of Central Missouri
 
-###Question 1: Basic Autoencoder
-###Objective:
+-##Question 1: Basic Autoencoder
+-##Objective:
 Implement a fully connected autoencoder on the MNIST dataset and evaluate reconstruction quality with varying latent dimensions. ###S teps:
 
 Define and Preprocess Input Data
