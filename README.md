@@ -2,12 +2,12 @@
 # README - Home Assignment 3 (Neural Networks and Deep Learning)
 
 ## Student Information
-*Name:* Ashritha Reddy Katta
+*Name:* Jasmitha Nalla
 *Course:* CS5720 Neural Networks and Deep Learning  
 *Semester:* Spring 2025  
 *University:* University of Central Missouri  
-*Student ID :* 700755460
-*Submission Date:* 4/2/2025
+*Student ID :* 700779225
+
 
 
 ---
