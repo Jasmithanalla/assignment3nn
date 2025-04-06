@@ -1,76 +1,82 @@
-# assignment3nn
+# Homeassignment3
+# README - Home Assignment 3 (Neural Networks and Deep Learning)
 
 ## Student Information
-- **Name**: Jasmitha Nalla
-- **Course**: CS5720 Neural Networks and Deep Learning
-- **University**: University of Central Missouri
+*Name:* Ashritha Reddy Katta
+*Course:* CS5720 Neural Networks and Deep Learning  
+*Semester:* Spring 2025  
+*University:* University of Central Missouri  
+*Student ID :* 700755460
+*Submission Date:* 4/2/2025
 
-  ## Question 1: Basic Autoencoder
-  ## Objective:
-Implement a fully connected autoencoder on the MNIST dataset and evaluate reconstruction quality with varying latent dimensions. ###S teps:
 
-Define and Preprocess Input Data
-Loaded the MNIST dataset using tensorflow.keras.datasets.
-Normalized pixel values to [0, 1] and reshaped images to (num_samples, 784).
-Define Autoencoder Architecture
-Encoder: Input layer (784) → Dense layer (32 units, ReLU).
-Decoder: Dense layer (784 units, Sigmoid) → Output image.
-Compile and Train the Autoencoder
-Used binary_crossentropy as the loss function and Adam optimizer.
-Trained the model to minimize reconstruction error between input and output.
-Visualize Reconstruction
-Predicted reconstructed images from test data.
-Plotted original vs. reconstructed images for visual comparison.
-Experiment with Latent Dimensions
-Repeated training with latent dimensions 16 and 64.
-Compared reconstruction quality across different compression levels.
-Question 2: Denoising Autoencoder
-Objective:
-Train an autoencoder to reconstruct clean images from noisy MNIST inputs. ###Steps:
+---
 
-Add Noise to Input Images
-Applied Gaussian noise (mean=0, std=0.5) using np.random.normal.
-Clipped values to stay within [0, 1]. ###Build Autoencoder
-Reused the same encoder-decoder structure as in Question 1.
-Train the Denoising Model
-Input: Noisy images
-Target: Clean images
-Trained the model to learn denoising behavior.
-Evaluate and Visualize
-Generated and visualized output images from noisy test inputs.
-Plotted side-by-side: noisy vs. denoised outputs.
-Real-World Application
-Useful in medical imaging or security for recovering meaningful data from noisy inputs.
-Question 3: Text Generation with LSTM
-Objective:
-Use an LSTM-based RNN to generate text character-by-character based on a given dataset.
+## Assignment Overview
+This assignment consists of four tasks involving Autoencoders and Recurrent Neural Networks (RNNs). The tasks include implementing a basic autoencoder, a denoising autoencoder, a character-based text generation model using LSTMs, and a sentiment classification model using an LSTM network.
 
-Steps:
-Load and Preprocess Dataset
-Loaded a corpus.
-Created a character-to-index mapping and one-hot encoded input sequences.
-Define LSTM Model
-Built a sequential model: LSTM layer → Dense output with softmax over all characters. ###Train the Model
-Used sequences of fixed length (e.g., 100 characters) to predict the next character.
-Trained using categorical crossentropy. ###Generate New Text with Temperature Scaling
-Used a seed text and generated output one character at a time.
-Adjusted temperature:
-Low (e.g., 0.5): Conservative, repetitive results.
-High (e.g., 1.5): Creative, diverse, less predictable results.
-Question 4: Sentiment Classification using LSTM
-Objective:
-Classify IMDB movie reviews as positive or negative using an LSTM-based sentiment classifier.
+---
 
-Steps:
-- Load and Preprocess Data
-Used tensorflow.keras.datasets.imdb.
-Limited vocabulary size (e.g., top 10,000 words).
-Applied pad_sequences to make review lengths uniform.
-Build the Model
-Embedding layer → LSTM layer → Dense output with sigmoid activation.
-Train the Model
-Used binary cross-entropy loss for binary classification.
-Trained and validated on IMDB training/test sets.
-Evaluate Performance
-Predicted sentiments on test data.
-Generated confusion matrix and classification report (precision, recall, F1-score, accuracy).
+## Q1: Implementing a Basic Autoencoder
+
+### Description:
+An autoencoder is a neural network used to reconstruct its input. In this task:
+- The MNIST dataset is used.
+- The encoder compresses input images into a latent space (dimension = 32).
+- The decoder reconstructs images from this compressed representation.
+
+### Steps:
+1. Load the MNIST dataset.
+2. Define an autoencoder using fully connected Dense layers.
+3. Train the model using binary cross-entropy loss.
+4. Visualize original vs. reconstructed images.
+5. Experiment with different latent space sizes (16, 64) to analyze reconstruction quality.
+
+---
+
+## Q2: Implementing a Denoising Autoencoder
+
+### Description:
+A denoising autoencoder is trained to remove noise from images. This task modifies the previous autoencoder by:
+- Adding Gaussian noise to input images.
+- Training the model to reconstruct clean images.
+- Comparing results between the standard and denoising autoencoders.
+
+### Steps:
+1. Modify the autoencoder to accept noisy input images.
+2. Train the model while keeping the output as clean images.
+3. Compare reconstruction quality of noisy vs. clean images.
+4. Explain a real-world application of denoising autoencoders (e.g., medical imaging).
+
+---
+
+## Q3: Implementing an RNN for Text Generation
+
+### Description:
+This task involves training an LSTM-based RNN to predict the next character in a text dataset.
+
+### Steps:
+1. Load a text dataset (e.g., Shakespeare Sonnets).
+2. Convert text into sequences (one-hot encoding or embeddings).
+3. Define an LSTM-based model.
+4. Train the model to predict the next character.
+5. Generate new text and explain the effect of temperature scaling on randomness.
+
+---
+
+## Q4: Sentiment Classification Using RNN
+
+### Description:
+An LSTM-based model is used to classify IMDB movie reviews as positive or negative.
+
+### Steps:
+1. Load the IMDB dataset.
+2. Preprocess text data (tokenization, padding sequences).
+3. Train an LSTM model for binary classification.
+4. Generate a confusion matrix and classification report.
+5. Discuss the importance of the precision-recall tradeoff in sentiment analysis.
+
+---
+
+## Conclusion
+This assignment demonstrated autoencoder-based image reconstruction, denoising techniques, character-based text generation using RNNs, and sentiment analysis using LSTMs. Each model was trained and evaluated based on performance metrics.
