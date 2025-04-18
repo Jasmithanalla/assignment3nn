@@ -28,7 +28,7 @@ An autoencoder is a neural network used to reconstruct its input. In this task:
 ### Steps:
 1. Load the MNIST dataset.
 2. Define an autoencoder using fully connected Dense layers.
-  Ans:This autoencoder is suitable for input data like flattened 28x28 images (e.g., MNIST).
+ # Ans:This autoencoder is suitable for input data like flattened 28x28 images (e.g., MNIST).
 
 Autoencoder Architecture
 Encoder:
