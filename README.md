@@ -28,7 +28,7 @@ An autoencoder is a neural network used to reconstruct its input. In this task:
 ### Steps:
 1. Load the MNIST dataset.
 2. Define an autoencoder using fully connected Dense layers.
-  This autoencoder is suitable for input data like flattened 28x28 images (e.g., MNIST).
+  Ans:This autoencoder is suitable for input data like flattened 28x28 images (e.g., MNIST).
 
 Autoencoder Architecture
 Encoder:
@@ -42,9 +42,10 @@ Decoder:
 Hidden layer: 32 units
 
 Output layer: 784 units (reconstructed image
-4. Train the model using binary cross-entropy loss.
-5. Visualize original vs. reconstructed images.
-6. Experiment with different latent space sizes (16, 64) to analyze reconstruction quality.
+
+3. Train the model using binary cross-entropy loss.
+4. Visualize original vs. reconstructed images.
+5. Experiment with different latent space sizes (16, 64) to analyze reconstruction quality.
 
 
 ---
@@ -62,7 +63,7 @@ A denoising autoencoder is trained to remove noise from images. This task modifi
 2. Train the model while keeping the output as clean images.
 3. Compare reconstruction quality of noisy vs. clean images.
 4. Explain a real-world application of denoising autoencoders (e.g., medical imaging).
-   Denoising autoencoders are widely used in medical imaging to improve image quality by removing noise and artifacts, which is crucial for accurate diagnosis and analysis.
+  Ans: Denoising autoencoders are widely used in medical imaging to improve image quality by removing noise and artifacts, which is crucial for accurate diagnosis and analysis.
 
 Example: Denoising in Chest X-Ray and Brain MRI Imaging
 
@@ -80,6 +81,7 @@ This task involves training an LSTM-based RNN to predict the next character in a
 1. Load a text dataset (e.g., Shakespeare Sonnets).
 2. Convert text into sequences (one-hot encoding or embeddings).
 3. Define an LSTM-based model.
+  Ans: A Long Short-Term Memory (LSTM) model is a type of recurrent neural network (RNN) designed to effectively learn and remember long-term dependencies in sequential data, such as time series, text, or speech. Unlike traditional RNNs, LSTMs use a specialized architecture with memory cells and gating mechanisms to address issues like the vanishing gradient problem, enabling them to retain information over many time steps
 4. Train the model to predict the next character.
 5. Generate new text and explain the effect of temperature scaling on randomness.
 
@@ -96,6 +98,7 @@ An LSTM-based model is used to classify IMDB movie reviews as positive or negati
 3. Train an LSTM model for binary classification.
 4. Generate a confusion matrix and classification report.
 5. Discuss the importance of the precision-recall tradeoff in sentiment analysis.
+Ans:The precision-recall tradeoff is a fundamental consideration in sentiment analysis, directly impacting how well a model balances the cost of false positives and false negatives when classifying text as positive, negative, or neutral.
 
 ---
 
