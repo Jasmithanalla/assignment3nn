@@ -63,7 +63,7 @@ A denoising autoencoder is trained to remove noise from images. This task modifi
 2. Train the model while keeping the output as clean images.
 3. Compare reconstruction quality of noisy vs. clean images.
 4. Explain a real-world application of denoising autoencoders (e.g., medical imaging).
-  Ans: Denoising autoencoders are widely used in medical imaging to improve image quality by removing noise and artifacts, which is crucial for accurate diagnosis and analysis.
+  *Ans: Denoising autoencoders are widely used in medical imaging to improve image quality by removing noise and artifacts, which is crucial for accurate diagnosis and analysis*.
 
 Example: Denoising in Chest X-Ray and Brain MRI Imaging
 
