@@ -28,9 +28,24 @@ An autoencoder is a neural network used to reconstruct its input. In this task:
 ### Steps:
 1. Load the MNIST dataset.
 2. Define an autoencoder using fully connected Dense layers.
-3. Train the model using binary cross-entropy loss.
-4. Visualize original vs. reconstructed images.
-5. Experiment with different latent space sizes (16, 64) to analyze reconstruction quality.
+  This autoencoder is suitable for input data like flattened 28x28 images (e.g., MNIST).
+
+Autoencoder Architecture
+Encoder:
+
+Input layer: 784 units (for 28x28 images)
+
+Hidden layer: 32 units (compressed representation)
+
+Decoder:
+
+Hidden layer: 32 units
+
+Output layer: 784 units (reconstructed image
+4. Train the model using binary cross-entropy loss.
+5. Visualize original vs. reconstructed images.
+6. Experiment with different latent space sizes (16, 64) to analyze reconstruction quality.
+
 
 ---
 
