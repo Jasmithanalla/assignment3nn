@@ -28,7 +28,7 @@ An autoencoder is a neural network used to reconstruct its input. In this task:
 ### Steps:
 1. Load the MNIST dataset.
 2. Define an autoencoder using fully connected Dense layers.
- # Ans:This autoencoder is suitable for input data like flattened 28x28 images (e.g., MNIST).
+Ans:This autoencoder is suitable for input data like flattened 28x28 images (e.g., MNIST).
 
 Autoencoder Architecture
 Encoder:
@@ -63,7 +63,7 @@ A denoising autoencoder is trained to remove noise from images. This task modifi
 2. Train the model while keeping the output as clean images.
 3. Compare reconstruction quality of noisy vs. clean images.
 4. Explain a real-world application of denoising autoencoders (e.g., medical imaging).
-  *Ans: Denoising autoencoders are widely used in medical imaging to improve image quality by removing noise and artifacts, which is crucial for accurate diagnosis and analysis*.
+Ans: Denoising autoencoders are widely used in medical imaging to improve image quality by removing noise and artifacts, which is crucial for accurate diagnosis and analysis.
 
 Example: Denoising in Chest X-Ray and Brain MRI Imaging
 
@@ -81,7 +81,7 @@ This task involves training an LSTM-based RNN to predict the next character in a
 1. Load a text dataset (e.g., Shakespeare Sonnets).
 2. Convert text into sequences (one-hot encoding or embeddings).
 3. Define an LSTM-based model.
-  Ans: A Long Short-Term Memory (LSTM) model is a type of recurrent neural network (RNN) designed to effectively learn and remember long-term dependencies in sequential data, such as time series, text, or speech. Unlike traditional RNNs, LSTMs use a specialized architecture with memory cells and gating mechanisms to address issues like the vanishing gradient problem, enabling them to retain information over many time steps
+ Ans: A Long Short-Term Memory (LSTM) model is a type of recurrent neural network (RNN) designed to effectively learn and remember long-term dependencies in sequential data, such as time series, text, or speech. Unlike traditional RNNs, LSTMs use a specialized architecture with memory cells and gating mechanisms to address issues like the vanishing gradient problem, enabling them to retain information over many time steps
 4. Train the model to predict the next character.
 5. Generate new text and explain the effect of temperature scaling on randomness.
 
